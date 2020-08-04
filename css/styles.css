@@ -1,0 +1,214 @@
+/********************TAG SELECTORS********************/
+a {
+  color: #e0dede;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff;
+  text-align: center;
+  font-family: verdana, sans-serif;
+  margin-top: 56px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+}
+
+p {
+  color: #222;
+  line-height: 2;
+}
+
+/********************CLASS SELECTORS********************/
+
+.flunsiana {
+  font-size: 350%;
+  color: #fff;
+}
+
+.textShadow {
+  text-shadow: 2px 2px 5px #000;
+}
+
+.boxShadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-text {
+  width: 50%;
+  margin-top: 10%;
+  text-align: left;
+}
+
+.blackLink {
+  color: #222;
+  text-decoration: underline;
+}
+
+a.blackLink:hover {
+  color: #AAA;
+  text-decoration: underline;
+}
+
+.blackLinkNoUnderline {
+  color: #222;
+  text-decoration: none;
+}
+
+a.blackLinkNoUnderline:hover {
+  color: #AAA;
+  text-decoration: none;
+}
+
+.first-container-margin {
+  margin: 10% 20% 0;
+}
+
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+
+.caption {
+  text-align: left;
+  font-size: 70%;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.noBullets {
+  list-style-type: none;
+}
+
+.my-3 {
+  padding-bottom: 5%;
+}
+
+.cardPadding {
+  padding-bottom: 5%;
+}
+
+/* Images */
+
+.card-img-top {
+  max-height: 169.08px;
+}
+
+.responsiveFrame:hover {
+  border: 1px solid #777;
+}
+
+/* Background Image */
+
+.jumbotron{margin-bottom: 0; position: relative;}
+
+.parallax {
+  /* Set a specific height */
+  height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Paragraph for Parallax Section */
+
+.parallax p {
+font-size: 30px;
+color:#fff;
+line-height: 60px;
+text-align: center;
+}
+
+/* Heading for Parallax Section */
+
+.parallax h1 {
+text-transform: uppercase;
+color: white;
+font-size: 70px;
+font-weight: 400;
+padding-top: 60px;
+line-height: 100px;
+text-align: center;
+}
+
+#parallax-static {
+    background-image: url("../images/berge_2.jpeg");
+}
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+}
+
+/* Container Section */
+
+.title-container {
+  margin: 50px auto 20px;
+}
+
+.intro-container {
+  margin: 56px 0 0;
+}
+
+.welcome-container {
+  background-color: #fff;
+  padding: 3% 20% 0;
+  text-align: left;
+}
+
+.topics-container {
+  background-color: #fff;
+  padding: 3%;
+}
+
+.footer-container {
+  background-color: #343a40;
+  color: #e0dede;
+  margin: 5% auto auto;
+  padding: 1%;
+}
+
+/* Social Media */
+
+.sm-button {
+  margin: 1%;
+  color: white;
+}
+
+.fa-instagram:hover {
+  color: #E1306C;
+}
+
+.fa-youtube:hover {
+  color: #FF0000;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-facebook-square:hover {
+  color: #4267B2;
+}
+
+/********************ID SELECTORS********************/
