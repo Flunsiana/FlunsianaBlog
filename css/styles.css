@@ -16,6 +16,10 @@ body {
   margin-top: 56px;
 }
 
+i {
+  text-align: center;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #222;
 }
@@ -186,6 +190,12 @@ text-align: center;
   color: #e0dede;
   margin: 5% auto auto;
   padding: 1%;
+  text-align: center;
+}
+
+.footer-container.a {
+  color: #e0dede;
+  text-decoration: none;
 }
 
 /* Social Media */
