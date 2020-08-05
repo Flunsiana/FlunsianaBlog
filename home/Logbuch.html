@@ -132,6 +132,15 @@
         <ul>
           <li>Wenn ich etwas im Footer oder in der Navbar ändere, muss ich das noch auf jeder Seite einzeln tun</li>
         </ul>
+        <li>
+          Konnte das Problem mit den Icons dadurch lösen, dass ich den Link zu styles.css im head unter den
+          <em>Bootstrap</em>-Link gesetzt habe. 
+          Die Links im Footer ist auf allen Seiten außer Index noch immer blau statt hellgrau.
+        </li>
+        <li>
+          Konnte auch das mit den Links lösen. Hatte sowohl einen externen Link zu <em>Bootstrap</em> im Header, 
+          als auch eine <em>Bootstrap</em>.css in meinem CSS-Ordner. Habe die Datei gelöscht. Danach klappte es.
+        </li>
       </ul>
 
     </p>
@@ -144,8 +153,8 @@
     <div class="footer-container">
       <a href="../home/imprint.html">Impressum</a>
       <a href="../home/privacy.html">Datenschutz</a>
-      <a href="https://www.instagram.com/flunsiana.blog/">Instagram</a>
-      <a href="#">YouTube</a>
+      <a target="_blank" href="https://www.instagram.com/flunsiana.blog/">Instagram</a>
+      <a target="_blank" href="https://www.youtube.com/watch?v=sz2EM-gkEs0">YouTube</a>
       <a href="#">Twitter</a>
       <a href="#">Facebook</a> <br>
       <span>&copy 2020 Christoph Liedel</span>
