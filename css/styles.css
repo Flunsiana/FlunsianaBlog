@@ -12,7 +12,10 @@ a:hover {
 body {
   background-color: #fff;
   text-align: center;
-  font-family: verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 56px 0 0;
   padding: 5% 0 0;
 }
@@ -21,13 +24,42 @@ i {
   text-align: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
+h1 {
+  color: #222;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: #222;
+  font-weight: 450;
+  font-size: 2rem;
+}
+
+h3 {
+  color: #222;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+
+h4 {
+  color: #222;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+h5 {
+  color: #222;
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
 h6 {
   color: #222;
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 p {
@@ -45,10 +77,6 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-.content {
-  margin: 0 200px;
 }
 
 .logo {
@@ -205,17 +233,25 @@ body.background-img {
 
 .welcome-container {
   background-color: #fff;
-  padding: 3% 20% 3%;
-  text-align: left;
 }
 
 .topics-container {
   background-color: #fff;
-  padding: 6%;
+  padding: 10px 6% 8%;
 }
 
 .footer.home-footer {
   margin-top: 0;
+}
+
+.topics-homepage {
+  display: grid;
+  grid-gap: 35px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, 150px);
+  justify-content: space-around;
+  align-content: space-around;
+  margin: auto 3%;
 }
 
 /* Social Media */
@@ -241,4 +277,67 @@ body.background-img {
   color: #4267B2;
 }
 
-/********************ID SELECTORS********************/
+.icons-grey {
+  color: #666;
+}
+
+/******************** SUBPAGES********************/
+
+.blog-article {
+  display: grid;
+  grid-template-columns: 15% 1fr 15%;
+  grid-column-gap: 10px;
+}
+
+.blog-article>* {
+  grid-column: 2;
+  min-width: 0;
+}
+
+/* Content */
+
+.content {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-column-gap: 10px;
+  text-align: left;
+}
+
+.content>* {
+  grid-column: 2;
+  min-width: 0;
+}
+
+/* Logbook */
+
+
+.log-grid {
+  display: grid;
+  grid-gap: 35px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.log-card {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.log-card:hover {
+  background-color: #bbb;
+  border: 1px solid #222;
+}
+
+.log-card>ul {
+  color: #000;
+}
+
+.content>.log-grid {
+  grid-column: 1 / -1;
+  margin: auto 10%;
+}
+
+/******************** ID SELECTORS ********************/
