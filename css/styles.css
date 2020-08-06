@@ -1,4 +1,4 @@
-/********************TAG SELECTORS********************/
+/******************** TAG SELECTORS ********************/
 a {
   color: #e0dede;
   text-decoration: none;
@@ -13,14 +13,20 @@ body {
   background-color: #fff;
   text-align: center;
   font-family: verdana, sans-serif;
-  margin-top: 56px;
+  margin: 56px 0 0;
+  padding: 5% 0 0;
 }
 
 i {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #222;
 }
 
@@ -29,16 +35,66 @@ p {
   line-height: 2;
 }
 
-/********************CLASS SELECTORS********************/
+/******************** HEADER ********************/
 
-.flunsiana {
-  font-size: 350%;
+.header {
+  background-color: #343a40;
+  color: #e0dede;
+  padding: 16px;
+  text-align: left;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+  margin: 0 200px;
+}
+
+.logo {
+  font-size: 125%;
+  color: #fff;
+  margin: 0 16px 0 0;
+}
+
+.menu {
+  display: inline;
+
+}
+
+ul.menu {
+  padding: 0;
+}
+
+.menu a {
+  padding: 8px;
+  color: rgba(255, 255, 255, .5);
+}
+
+.menu a:hover {
   color: #fff;
 }
 
-.textShadow {
-  text-shadow: 2px 2px 5px #000;
+.menu a:active {
+  text-decoration: underline;
 }
+
+.menu .current_menu {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+/******************** FOOTER ********************/
+
+.footer {
+  background-color: #343a40;
+  color: #e0dede;
+  margin: 5% auto auto;
+  padding: 1%;
+  text-align: center;
+}
+
+/******************** CLASS SELECTORS ********************/
 
 .boxShadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -70,13 +126,10 @@ a.blackLinkNoUnderline:hover {
   text-decoration: none;
 }
 
-.first-container-margin {
-  margin: 10% 20% 0;
-}
-
 .text-right {
   text-align: right;
 }
+
 .text-left {
   text-align: left;
 }
@@ -97,105 +150,72 @@ a.blackLinkNoUnderline:hover {
   list-style-type: none;
 }
 
-.my-3 {
-  padding-bottom: 5%;
-}
-
-.cardPadding {
-  padding-bottom: 5%;
-}
-
 /* Images */
-
-.card-img-top {
-  max-height: 169.08px;
-}
 
 .responsiveFrame:hover {
   border: 1px solid #777;
 }
 
+/******************** HOME PAGE ********************/
+
+/* Intro */
+
+h1.flunsiana {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 70px;
+  font-weight: 400;
+  padding-top: 60px;
+  line-height: 100px;
+  text-align: center;
+  text-shadow: 2px 2px 5px #000;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+p.flunsiana {
+  font-size: 30px;
+  color: #fff;
+  line-height: 60px;
+  text-align: center;
+  text-shadow: 2px 2px 5px #000;
+  margin: 0 0 16px 0;
+  padding: 0;
+}
+
 /* Background Image */
 
-.jumbotron{margin-bottom: 0; position: relative;}
-
-.parallax {
-  /* Set a specific height */
-  height: 600px;
-
-  /* Create the parallax scrolling effect */
+body.background-img {
+  background-image: url(../images/berge_2.jpeg);
+  background-position: center top;
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-}
-
-/* Paragraph for Parallax Section */
-
-.parallax p {
-font-size: 30px;
-color:#fff;
-line-height: 60px;
-text-align: center;
-}
-
-/* Heading for Parallax Section */
-
-.parallax h1 {
-text-transform: uppercase;
-color: white;
-font-size: 70px;
-font-weight: 400;
-padding-top: 60px;
-line-height: 100px;
-text-align: center;
-}
-
-#parallax-static {
-    background-image: url("../images/berge_2.jpeg");
-}
-  /* Move the pseudo-element back away from the camera,
-   * then scale it back up to fill the viewport.
-   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(1.5);
-  /* Force the background image to fill the whole element. */
-  background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */
-  z-index: -1;
 }
 
 /* Container Section */
 
 .title-container {
-  margin: 50px auto 20px;
+  margin: 56px auto 20px;
 }
 
 .intro-container {
   margin: 56px 0 0;
+  padding: 0 0 200px;
 }
 
 .welcome-container {
   background-color: #fff;
-  padding: 3% 20% 0;
+  padding: 3% 20% 3%;
   text-align: left;
 }
 
 .topics-container {
   background-color: #fff;
-  padding: 3%;
+  padding: 6%;
 }
 
-.footer-container {
-  background-color: #343a40;
-  color: #e0dede;
-  margin: 5% auto auto;
-  padding: 1%;
-  text-align: center;
-}
-
-.footer-container.a {
-  color: #e0dede;
-  text-decoration: none;
+.footer.home-footer {
+  margin-top: 0;
 }
 
 /* Social Media */
