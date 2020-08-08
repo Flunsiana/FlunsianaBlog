@@ -34,32 +34,35 @@ h2 {
   color: #222;
   font-weight: 450;
   font-size: 2rem;
+  margin: 9px 0;
 }
 
 h3 {
   color: #222;
   font-weight: 400;
   font-size: 1.75rem;
+  margin: 8px 0;
 }
 
 h4 {
   color: #222;
   font-weight: 400;
   font-size: 1.5rem;
-  margin: 0;
+  margin: 7px 0;
 }
 
 h5 {
   color: #222;
   font-weight: 400;
   font-size: 1.25rem;
-  margin: 0;
+  margin: 6px 0;
 }
 
 h6 {
   color: #222;
   font-weight: 300;
   font-size: 1rem;
+  margin: 5px 0;
 }
 
 p {
@@ -346,7 +349,8 @@ body.background-img {
 
 .blog-ranking {
   display: grid;
-  grid-template: auto / repeat(3, 1fr);
+  grid-template: auto / repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 5%;
 }
 
 /* Topics */
